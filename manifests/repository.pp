@@ -25,7 +25,7 @@ class bareos::repository inherits bareos {
       }
     }
 
-    Debian,Ubuntu: {
+    debian,ubuntu: {
       file { '/etc/apt/sources.list.d/bareos.list':
         content => "deb http://download.bareos.org/bareos/release/${bareos::repo_flavour}/${bareos::repo_distro} /\n"
       }
